@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: radial-gradient(
+    circle,
+    rgb(255, 255, 255),
+    rgb(247, 173, 175)
+  );
+
+  font-family: var(--font-general);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  padding: 2rem;
+  transition: transform 1.5s;
+}
+
+a:hover {
+  transform: scale(1.5);
+}
+
+section p {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 390px) {
+  img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grilla_principal {
+    display: grid;
+    height: 105rem;
+    row-gap: 1rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+      "container_top"
+      "container_main"
+      "container_footer";
+    padding: 2rem;
+  }
+
+  .container_top {
+    grid-area: container_top;
+  }
+
+  .container_main {
+    grid-area: container_main;
+  }
+
+  .container_footer {
+    grid-area: container_footer;
+  }
+
+  .grilla_main {
+    display: grid;
+    height: 105rem;
+    row-gap: 1rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1.5fr 0.5fr 1fr 1fr;
+    grid-template-areas:
+      "lugar"
+      "texto"
+      "cuenta"
+      "fiesta"
+      "asistencia";
+  }
+
+  .lugar__main {
+    grid-area: lugar;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #99760a;
+    font-weight: bold;
+  }
+
+  .texto__main {
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-principal);
+    font-size: 7em;
+  }
+
+  .container_parrafo {
+    text-align: center;
+    color: #99760a;
+  }
+
+  .cuenta__main {
+    grid-area: cuenta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #99760a;
+    font-weight: bold;
+  }
+
+  .fiesta__main {
+    grid-area: fiesta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #99760a;
+    font-weight: bold;
+  }
+  .asistencia__main {
+    grid-area: asistencia;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #99760a;
+    font-weight: bold;
+  }
+
+  .icono__main {
+    width: 6.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .grilla_principal {
+    display: grid;
+    height: 105rem;
+    row-gap: 1rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+      "container_top"
+      "container_main"
+      "container_footer";
+  }
+
+  .container_top {
+    grid-area: container_top;
+  }
+
+  .container_main {
+    grid-area: container_main;
+  }
+
+  .container_footer {
+    grid-area: container_footer;
+  }
+
+  .grilla_main {
+    display: grid;
+    height: 105rem;
+    row-gap: 2rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "lugar"
+      "texto"
+      "cuenta"
+      "fiesta"
+      "asistencia";
+  }
+
+  .lugar__main {
+    grid-area: lugar;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #99760a;
+    font-weight: bold;
+  }
+
+  .texto__main {
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-principal);
+    font-size: 7em;
+  }
+
+  .container_parrafo {
+    text-align: center;
+    color: #99760a;
+  }
+
+  .cuenta__main {
+    grid-area: cuenta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #99760a;
+    font-weight: bold;
+  }
+
+  .fiesta__main {
+    grid-area: fiesta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #99760a;
+    font-weight: bold;
+  }
+  .asistencia__main {
+    grid-area: asistencia;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #99760a;
+    font-weight: bold;
+  }
+
+  .icono__main {
+    width: 6.5rem;
+  }
+}
